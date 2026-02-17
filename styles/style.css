@@ -1,13 +1,76 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+:root {
+  font-family: 'IBM Plex mono', sans-serif;
+  padding: 10px;
+}
+
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  color: var(--header-text-color);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  color: var(--header-text-color);
+
+}
+
+h4 {
+  font-size: var(--h4-size);
+  color: var(--header-text-color);
+
+}
+
+p {
+  font-size: var(--text-size);
+  color: var(--text-color);
+
+}
+
+.main-title {
+text-shadow: 4px 4px 0 var(--accent-color);
+color: var(--big-header-color);
+font-size: 116px;
+text-transform:lowercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title-decor {
+  background-color: var(--title-decor-color-bg);
+}
+
+a {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  border: var(--text-color) solid 1px;
 }
 
 @media (768<width<=1024){
-
+.main-title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
 }
 
-@media (10248<width){
-
+@media (1024<width){
+.main-title {
+   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+}
 }
