@@ -3,12 +3,14 @@
   и их переопределение под различные устройства
 */
 :root{
+  --bg-color: #FFF1F7;
   --text-color: #353430; /* основной текст */
   --header-text-color: #353430; /* заголовки блоков */
   --title-decor-color-bg: #FF8DCB; /* фон заголовков */
   --accent-color:  #FF8DCB; /* тень текста */
   --big-header-color: #FFC2E6; /* no focus */
   --theme-buttons-color: #353430; /* цвета кнопок смены темы */
+  --button-hover-border: #35343066; /*обводка кнопки с прозачностью*/
 
   --h1-size: 116px;
   --h2-size: 18px;

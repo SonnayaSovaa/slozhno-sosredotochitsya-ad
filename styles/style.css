@@ -3,6 +3,7 @@
 :root {
   font-family: 'IBM Plex mono', sans-serif;
   padding: 10px;
+  background-color: var(--bg-color);
 }
 
 .page {
@@ -56,12 +57,36 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--text-color);
 }
 
 a:focus {
   border: var(--text-color) solid 1px;
 }
+
+.header__theme-menu-button {
+  color: var(--theme-buttons-color);
+  background-color: transparent;
+  text-transform: lowercase;
+  border:none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid  var(--button-hover-border);
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid  var(--button-hover-border);
+
+}
+
+.header__theme-menu-button_active{
+  background-color: transparent;
+  border: 1px solid  var(--theme-buttons-color);
+}
+
+
+
 
 @media (768<width<=1024){
 .main-title {
