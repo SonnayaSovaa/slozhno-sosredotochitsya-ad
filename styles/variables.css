@@ -12,6 +12,8 @@
   --theme-buttons-color: #353430; /* цвета кнопок смены темы */
   --button-hover-border: #35343066; /*обводка кнопки с прозачностью*/
 
+  --bg_image: "../images/cover-image.png";
+
   --h1-size: 116px;
   --h2-size: 18px;
   --h3-size: 18px;

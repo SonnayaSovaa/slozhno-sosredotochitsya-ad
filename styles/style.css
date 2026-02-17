@@ -7,7 +7,8 @@
 }
 
 .page {
-  
+  background-image: "../images/cover-image.png";
+  background-attachment: fixed;
 }
 
 h1 {
@@ -44,13 +45,16 @@ font-size: 116px;
 text-transform:lowercase;
 }
 
+.title-decor {
+  background-color: var(--title-decor-color-bg);
+  font-weight:normal;
+}
+
 .bold {
   font-weight: bold;
 }
 
-.title-decor {
-  background-color: var(--title-decor-color-bg);
-}
+
 
 a {
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -62,6 +66,17 @@ a:hover {
 
 a:focus {
   border: var(--text-color) solid 1px;
+}
+
+header {
+  height: 1vh;
+  min-height: 668px;
+}
+
+footer {
+  height: 1vh;
+  min-height: 668px;
+
 }
 
 .header__theme-menu-button {
@@ -85,16 +100,168 @@ a:focus {
   border: 1px solid  var(--theme-buttons-color);
 }
 
+.why-is-difficult {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content repeat(2, max-content);
+  gap:10px;
+}
+
+.what-redusing-concentration {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  min-content repeat(3, max-content);
+  gap: 10px;
+}
+
+.how-to-improve {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  min-content repeat(5, max-content);
+  gap: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.image-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  gap: 10px;
+}
 
 
 
-@media (768<width<=1024){
+@media (768px<=width<1024px){
+:root {
+  padding: 20px;
+}
+
 .main-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
+.why-is-difficult {
+  grid-template-columns: 236px 1fr;
+  grid-template-rows: repeat (2, min-content);
+  gap:20px;
 }
 
-@media (1024<width){
+.why-is-difficult-title {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.why-is-difficult-article.first {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.why-is-difficult-article.second {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+.what-redusing-concentration {
+  grid-template-columns: 236px 1fr;
+  grid-template-rows: 1fr repeat(3, min-content);
+  gap: 20px;
+}
+
+.what-redusing-concentration-title {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.what-redusing-concentration-article.first {
+  grid-column: 1/3;
+  grid-row:  2;
+}
+
+.what-redusing-concentration-article.second {
+  grid-column: 1/3;
+  grid-row:  3;
+}
+
+.what-redusing-concentration-article.third {
+  grid-column: 1/3;
+  grid-row:  4;
+}
+
+
+.how-to-improve {
+  grid-template-columns: 236px 1fr;
+  grid-template-rows: 23px repeat(5, max-content);
+  
+}
+
+.how-to-improve-subtitle {
+  grid-column: 2;
+  grid-row:  1/2;
+}
+
+.how-to-improve-article-title {
+  grid-column: 1;
+  grid-row: 1/5;
+}
+
+.how-to-improve-article.first {
+  grid-column: 2;
+  grid-row:  2;
+}
+
+.how-to-improve-article.second {
+  grid-column: 2;
+  grid-row:  3;
+}
+
+.how-to-improve-article.third {
+  grid-column: 2;
+  grid-row:  4;
+}
+.how-to-improve-article.fourth {
+  grid-column: 2;
+  grid-row:  5;
+}
+
+.how-to-improve-article.fifth {
+  grid-column: 2;
+  grid-row:  6;
+}
+
+.image-container{
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr) auto;
+}
+}
+
+.image_mountains{
+  grid-column: 1/3;
+  grid-row:  1;
+}
+.image_ice-cream{
+  grid-column: 3;
+  grid-row:  1/3;
+}
+.image_tape{
+  grid-column: 1;
+  grid-row:  2/4;
+}
+.image_books{
+  grid-column: 2;
+  grid-row:  2;
+}
+.image_street{
+  grid-column: 2/4;
+  grid-row:  3;
+}
+
+@media (1024<=width){
 .main-title {
    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
 }
