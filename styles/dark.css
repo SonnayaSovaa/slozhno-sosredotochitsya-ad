@@ -13,6 +13,8 @@
   --big-header-color: #DB00FF; /* no focus */
   --theme-buttons-color: #FF0070; /* цвета кнопок смены темы */
   --button-hover-border: #FF007066; /*обводка кнопки с прозачностью*/
+  --bg_image: url("../images/cover-image-dark.png");
+
 }
 
 .theme-dark .page {
