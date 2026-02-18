@@ -5,10 +5,25 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+
+  --bg-color: #FFF1F7;
+  --text-color: #353430;
+  /* основной текст */
+  --header-text-color: #353430;
+  /* заголовки блоков */
+  --title-decor-color-bg: #FF8DCB;
+  /* фон заголовков */
+  --accent-color: #FF8DCB;
+  /* тень текста */
+  --big-header-color: #FFC2E6;
+  /* no focus */
+  --theme-buttons-color: #353430;
+  /* цвета кнопок смены темы */
+  --button-hover-border: #35343066;
+  /*обводка кнопки с прозачностью*/
+
+  --bg_image: url("../images/cover-image-light.png");
+
 }
 
 .theme-light .page {
