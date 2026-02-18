@@ -6,22 +6,21 @@
 
 :root.theme-dark {
   --bg-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   /* основной текст */
   --header-text-color: #000028;
   /* заголовки блоков */
-  --title-decor-color-bg: #FF0070;
+  --title-decor-color-bg: #ff0070;
   /* заголовки блоков */
-  --h2-color: #FF0070;
+  --h2-color: #ff0070;
   /* фон заголовков */
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
   /* тень текста */
-  --big-header-color: #DB00FF;
+  --big-header-color: #db00ff;
   /* no focus */
-  --theme-buttons-color: #FF0070;
+  --theme-buttons-color: #ff0070;
   /* цвета кнопок смены темы */
-  --button-hover-border: #FF007066;
+  --button-hover-border: #ff007066;
   /*обводка кнопки с прозачностью*/
   --bg_image: url("../images/cover-image-dark.png");
-
 }

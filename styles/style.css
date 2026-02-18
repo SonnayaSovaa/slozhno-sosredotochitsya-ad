@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 :root {
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: "IBM Plex mono", sans-serif;
 
   background-color: var(--bg-color);
 }
@@ -10,9 +10,7 @@
   background-image: var(--bg_image);
   background-attachment: fixed;
   width: 100%;
-  padding: 10px;
 }
-
 
 h3 {
   font-size: var(--h3-size);
@@ -22,13 +20,12 @@ h3 {
 h4 {
   font-size: var(--h4-size);
   color: var(--header-text-color);
-
 }
 
 p {
   font-size: var(--text-size);
   color: var(--text-color);
-  line-height: 23.4px;
+  line-height: 24px;
 }
 
 .main-title {
@@ -43,7 +40,6 @@ p {
   font-weight: normal;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 
 .bold {
@@ -62,19 +58,16 @@ a:focus-visible {
   border: var(--text-color) solid 1px;
 }
 
-
 header {
   height: 1vh;
   min-height: 668px;
 }
 
 .decorated-zone {
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 228px max-content 228px;
   text-wrap: wrap;
-
 }
 
 .header__theme-menu {
@@ -84,7 +77,6 @@ header {
   justify-self: end;
 }
 
-
 footer {
   height: 1vh;
   min-height: 668px;
@@ -92,7 +84,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-
 }
 
 .footer-text {
@@ -101,10 +92,7 @@ footer {
   justify-self: center;
   align-self: center;
   text-shadow: 2px 2px 0 var(--accent-color);
-
 }
-
-
 
 h1 {
   font-size: var(--h1-size);
@@ -117,7 +105,7 @@ h2 {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: var(--h2-size);
-  color: var( --h2-color);
+  color: var(--h2-color);
 }
 
 .h2 {
@@ -130,7 +118,6 @@ h2 {
   margin-top: 55px;
   color: var(--header-text-color);
 }
-
 
 .header__theme-menu-button {
   color: var(--theme-buttons-color);
@@ -148,16 +135,13 @@ h2 {
   gap: 10px;
 }
 
-
 .header__theme-menu-button:hover {
   border: 1px solid var(--button-hover-border);
 }
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--button-hover-border);
-
 }
-
 
 .header__theme-menu-button_active {
   background-color: transparent;
@@ -170,8 +154,6 @@ h2 {
   grid-template-rows: min-content repeat(2, max-content);
 }
 
-
-
 .why-is-difficult-article,
 .what-redusing-concentration-article,
 .how-to-improve-article {
@@ -182,7 +164,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content repeat(3, max-content);
-
 }
 
 .what-redusing-concentration-title,
@@ -194,7 +175,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content repeat(5, max-content);
-
 }
 
 .image-section {
@@ -209,13 +189,10 @@ img {
   margin-top: 5px;
 }
 
-
 .article-text {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-
 
 @media (768px<=width<1024px) {
   :root {
@@ -224,14 +201,12 @@ img {
 
   header {
     min-height: 1024px;
-
   }
 
   footer {
     min-height: 1024px;
     margin-top: 60px;
     display: grid;
-
   }
 
   .decorated-zone {
@@ -286,7 +261,6 @@ img {
     grid-row: 2;
   }
 
-
   .what-redusing-concentration {
     grid-template-columns: 236px 1fr;
     grid-template-rows: 1fr repeat(3, min-content);
@@ -296,7 +270,6 @@ img {
   .what-redusing-concentration-title {
     grid-column: 1/3;
     grid-row: 1;
-
   }
 
   .what-redusing-concentration-article.first {
@@ -314,17 +287,14 @@ img {
     grid-row: 4;
   }
 
-
   .how-to-improve {
     grid-template-columns: 236px 1fr;
     grid-template-rows: min-content repeat(5, max-content);
-
   }
 
   .how-to-improve-subtitle {
     grid-column: 2;
     grid-row: 1/2;
-
   }
 
   .how-to-improve-title {
@@ -364,7 +334,6 @@ img {
     grid-template-rows: repeat(2, 1fr) auto;
     gap: 20px;
   }
-
 
   .image_mountains {
     grid-column: 1/3;
@@ -392,10 +361,11 @@ img {
   }
 }
 
-
 @media (1024px<=width) {
   .main-title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-left: -22px;
+    margin-bottom: 16px;
   }
 
   :root {
@@ -415,9 +385,11 @@ img {
   .decorated-zone {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 299px max-content 299px;
+    margin-bottom: 28px;
   }
 
   .main-subtitle {
+    margin-top: -20px;
     grid-column: 2;
     grid-row: 3;
     align-self: center;
@@ -428,6 +400,11 @@ img {
     grid-row: 1;
     align-self: start;
     justify-self: center;
+  }
+
+  .article-text {
+    margin-top: 10px;
+    margin-bottom: -12px;
   }
 
   .header__theme-menu-list {
@@ -443,7 +420,7 @@ img {
   .why-is-difficult-title {
     grid-column: 1;
     grid-row: 1;
-    margin: 0px;
+    margin-top: 11px;
   }
 
   .why-is-difficult-article.first {
@@ -456,17 +433,17 @@ img {
     grid-row: 2;
   }
 
-
   .what-redusing-concentration {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content 1fr;
-    gap: 30px;
+    gap: 20px;
   }
 
   .what-redusing-concentration-title {
     grid-column: 1;
     grid-row: 1;
-
+    margin-top: 68px;
+    margin-bottom: -13px;
   }
 
   .what-redusing-concentration-article.first {
@@ -484,24 +461,33 @@ img {
     grid-row: 2;
   }
 
-
   .how-to-improve {
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
     grid-template-rows: min-content repeat(5, max-content);
-
+    margin-top: 72px;
+    gap: 10px;
   }
 
   .how-to-improve-subtitle {
     grid-column: 2/4;
     grid-row: 1/2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
+  h4 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+
+  .how-to-improve-article {
+    margin-top: 0px;
   }
 
   .how-to-improve-title {
     grid-column: 1;
     grid-row: 1/3;
-    margin: 0px;
+    margin-top: 10px;
   }
 
   .how-to-improve-article.first {
@@ -529,13 +515,17 @@ img {
     grid-row: 6;
   }
 
+  .image-section {
+    margin-top: 115px;
+  }
+
   .image-container {
     display: grid;
+    margin-top: 15px;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr) auto;
   }
-
 
   .image_mountains {
     grid-column: 1/3;
