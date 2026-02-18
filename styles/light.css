@@ -21,6 +21,7 @@
   /* цвета кнопок смены темы */
   --button-hover-border: #35343066;
   /*обводка кнопки с прозачностью*/
+  --h2-color:#353430;
 
   --bg_image: url("../images/cover-image-light.png");
 
