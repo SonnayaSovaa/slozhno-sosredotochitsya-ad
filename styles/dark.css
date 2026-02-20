@@ -1,26 +1,12 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-dark {
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
-  /* основной текст */
-  --header-text-color: #000028;
-  /* заголовки блоков */
-  --title-decor-color-bg: #ff0070;
-  /* заголовки блоков */
-  --h2-color: #ff0070;
-  /* фон заголовков */
+.theme-dark {
+  --background-image: url("../images/cover-image-dark.png");
   --accent-color: #ff0070;
-  /* тень текста */
-  --big-header-color: #db00ff;
-  /* no focus */
-  --theme-buttons-color: #ff0070;
-  /* цвета кнопок смены темы */
-  --button-hover-border: #ff007066;
-  /*обводка кнопки с прозачностью*/
-  --bg_image: url("../images/cover-image-dark.png");
+  --accent-color-opacity: #ff007066;
+  --text-color: #f1b2ce;
+  --decoration-color: var(--accent-color);
+  --background-color: #000028;
+  --header1-color: #db00ff;
+  --header2-color: var(--accent-color);
+  --header3-color: var(--background-color);
+  --is-light: visible;
 }

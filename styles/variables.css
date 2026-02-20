@@ -1,29 +1,21 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
-  --bg-color: #fff1f7;
-  --text-color: #353430;
-  /* основной текст */
-  --header-text-color: #353430;
-  /* заголовки блоков */
-  --title-decor-color-bg: #ff8dcb;
-  /* фон заголовков */
-  --accent-color: #ff8dcb;
-  /* тень текста */
-  --big-header-color: #ffc2e6;
-  /* no focus */
-  --theme-buttons-color: #353430;
-  /* цвета кнопок смены темы */
-  --button-hover-border: #35343066;
-  /*обводка кнопки с прозачностью*/
-  --h2-color: #353430;
-
-  --bg_image: url("../images/cover-image-light.png");
-  --h1-size: 116px;
-  --h2-size: 18px;
-  --h3-size: 18px;
-  --h4-size: 18px;
-  --text-size: 18px;
+  --background-image: url("../images/cover-image-dark.png");
+  --accent-color: #ff0070;
+  --accent-color-opacity: #ff007066;
+  --text-color: #f1b2ce;
+  --decoration-color: var(--accent-color);
+  --background-color: #000028;
+  --header1-color: #db00ff;
+  --header2-color: var(--accent-color);
+  --header3-color: var(--background-color);
+  --font-family: 'IBM Plex mono', monospace;
+  --regular-font-size: 18px;
+  --small-line-height: 83%;
+  --regular-line-height: 100%;
+  --large-line-height: 130%;
+  --title-line-height: 82.5%;
+  --bold-font-weight: 700;
+  --regular-font-weight: 400;
+  --font-style: normal;
+  --is-light: visible;
 }
