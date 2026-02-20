@@ -1,13 +1,14 @@
 :root {
-  --background-image: url("../images/cover-image-dark.png");
-  --accent-color: #ff0070;
-  --accent-color-opacity: #ff007066;
-  --text-color: #f1b2ce;
-  --decoration-color: var(--accent-color);
-  --background-color: #000028;
-  --header1-color: #db00ff;
-  --header2-color: var(--accent-color);
-  --header3-color: var(--background-color);
+  --background-image: url("../images/cover-image-light.png");
+  --accent-color: #ff8dcb;
+  --accent-color-opacity: #32312d66;
+  --text-color: #353430;
+  --decoration-color: var(--text-color);
+  --background-color: #fff1f7;
+  --header1-color: #ffc2e6;
+  --header2-color: var(--text-color);
+  --header3-color: var(--text-color);
+  --is-light: hidden;
   --font-family: 'IBM Plex mono', monospace;
   --regular-font-size: 18px;
   --small-line-height: 83%;
@@ -17,5 +18,4 @@
   --bold-font-weight: 700;
   --regular-font-weight: 400;
   --font-style: normal;
-  --is-light: visible;
 }
